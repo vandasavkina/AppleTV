@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class FilmViewModal {
+    var filmList: [film] = [
+        film.init(title: "The Lessons of Chemistry", genre: "Drama", coverImage: <#T##String#>, season: <#T##Int#>)
+    ]
+}

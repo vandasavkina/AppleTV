@@ -9,10 +9,22 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        /// Tab View
+        TabView {
+            /// Sample Tab's
+        }
+    }
+    
+    @ViewBuilder
+    func SampleTabView(_ title: String, _ icon: String) -> some View {
+        Text(title)
+            .tabItem {
+                Image(systemName: icon)
+                Text(title)
+            }
     }
 }
 
 #Preview {
-    Home()
+    ContentView()
 }
