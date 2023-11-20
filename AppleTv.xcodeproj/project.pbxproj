@@ -31,6 +31,7 @@
 		13ECCADF2B06700A0075E76C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		13ECCAE22B0BAB7C0075E76C /* FilmModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModal.swift; sourceTree = "<group>"; };
 		13ECCAE42B0BAC350075E76C /* FilmViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewModal.swift; sourceTree = "<group>"; };
+		13ECCAE62B0BB7900075E76C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 		13ECCABA2B03CD0E0075E76C = {
 			isa = PBXGroup;
 			children = (
+				13ECCAE62B0BB7900075E76C /* README.md */,
 				13ECCAC52B03CD0E0075E76C /* AppleTv */,
 				13ECCAC42B03CD0E0075E76C /* Products */,
 			);
