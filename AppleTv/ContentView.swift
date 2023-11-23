@@ -12,70 +12,60 @@ struct ContentView: View {
     var player = AVPlayer()
     var body: some View {
         
-        NavigationStack{
-            ZStack{
-                VideoPlayer(player: player)
-                    .onAppear{
-                        if player.currentItem == nil {
-                            let item = //AVPlayerItem(asset: String( "seaVideo"))
-                            AVPlayerItem(url: URL(string: "https://youtu.be/uM1vXnll32M?si=E_TqqZ2pBqJK5X_Y")!)
-                            player.replaceCurrentItem(with: item)
-                        }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
-                            player.play()
-                        })
-                    }
-                    .ignoresSafeArea()
+        NavigationView{
+            
+            ScrollView(.vertical) {
                 
-                ScrollView {
+                ZStack {
+                    Image("monarch")
+                        .resizable()
+                        .scaledToFit()
+                    //   .frame(width: 200, height: 500)
+                    // .foregroundColor(Color.blue)
+                        .ignoresSafeArea()
+                        .cornerRadius(12.0)
+                    
                     Button(action: {
                         
                     }, label: {
-                        Circle()
+                        Image("Image")
+                            .resizable()
                             .frame(width: 30, height: 30)
-                        //   .border(.black)
+                            .clipShape(Circle())
+                            .scaledToFill()
                             .padding(.leading, 300)
-                            .offset(y:-38)
+                            .offset(y:-275)
                     })
                     Button(action: {
                         
                     }, label: {
-                        Circle()
+                        Image(systemName: "checkmark.circle")
+                            .resizable()
                             .frame(width: 30, height: 30)
-                        //   .border(.black)
+                            .foregroundColor(.gray)
                             .padding(.leading, 200)
-                            .offset(y:-76)
+                            .offset(y:-275)
                     })
+                }
+                
+                
+                VStack(alignment: .leading) {
+                    
+                    
+                    Carousel()
+                        .padding(.bottom, 20)
+                    Carousel1()
+                        .padding(.top, 20)
+                    Carousel2()
+                        .padding(.top, 20)
                 }
                 .navigationTitle("Watch Now")
-               // .navigationTitle(Text("Watch Now").foregroundStyle(.white))
+                
+                
             }
-            ScrollView(.horizontal) {
-                HStack(spacing: 10) {
-                    Image("palm")
-                        .resizable()
-                        .frame(width: 150, height: 100)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                    Image("sea")
-                        .resizable()
-                        .frame(width: 150, height: 100)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                    Image("houses")
-                        .resizable()
-                        .frame(width: 150, height: 100)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                }
-            }
-            .frame(height: 200)
-            .padding()
-            // .border(Color.black)
         }
-        
-        
     }
 }
-// }
-
 #Preview {
     ContentView()
 }

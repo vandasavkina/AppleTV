@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct film:Hashable {
+struct film: Hashable {
     var title: String
     var genre: String
     var coverImage: String

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130C90142B0F700A00FB8682 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130C90132B0F700A00FB8682 /* Carousel.swift */; };
 		13ECCAC72B03CD0E0075E76C /* AppleTvApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ECCAC62B03CD0E0075E76C /* AppleTvApp.swift */; };
 		13ECCAC92B03CD0E0075E76C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13ECCAC82B03CD0E0075E76C /* ContentView.swift */; };
 		13ECCACB2B03CD0F0075E76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13ECCACA2B03CD0F0075E76C /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		130C90132B0F700A00FB8682 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		13ECCAC32B03CD0E0075E76C /* AppleTv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13ECCAC62B03CD0E0075E76C /* AppleTvApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTvApp.swift; sourceTree = "<group>"; };
 		13ECCAC82B03CD0E0075E76C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
@@ -68,6 +70,7 @@
 				13ECCAE12B0BAB3C0075E76C /* Film */,
 				13ECCAC62B03CD0E0075E76C /* AppleTvApp.swift */,
 				13ECCAC82B03CD0E0075E76C /* ContentView.swift */,
+				130C90132B0F700A00FB8682 /* Carousel.swift */,
 				13ECCADF2B06700A0075E76C /* SearchView.swift */,
 				13ECCADD2B066FFD0075E76C /* LibraryView.swift */,
 				13ECCADB2B066FB50075E76C /* StoreView.swift */,
@@ -171,6 +174,7 @@
 				13ECCADE2B066FFD0075E76C /* LibraryView.swift in Sources */,
 				13ECCAE02B06700A0075E76C /* SearchView.swift in Sources */,
 				13ECCAC72B03CD0E0075E76C /* AppleTvApp.swift in Sources */,
+				130C90142B0F700A00FB8682 /* Carousel.swift in Sources */,
 				13ECCAE52B0BAC350075E76C /* FilmViewModal.swift in Sources */,
 				13ECCAE32B0BAB7C0075E76C /* FilmModal.swift in Sources */,
 			);

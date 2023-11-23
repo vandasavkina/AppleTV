@@ -48,7 +48,7 @@ struct AppleTvApp: App {
             }
             .tag(5)
                 
-            }
+            } .preferredColorScheme(.dark)
         }
     }
 }
